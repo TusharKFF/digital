@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Embark</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://deveducateinc.azurewebsites.net/templates/assets/hco_fonts/hco_fonts.css" rel="stylesheet" type="text/css" />
+   <link href="https://localhost/singin.css/hco_fonts.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <div id="errorBanner" role="alert">
+    <span class="material-icons">error</span>
+    <div id="serverErrorMessage"></div>
+  </div>
+  <div class="container">
+    <div class="content">
+      <div id="companyLogo">
+        <img
+          data-tenant-branding-logo="true"
+          src="<%= __BASEURL__ %>/templates/assets/logo/embark_violet.svg"
+          alt="Embark"
+        >
+      </div>
+      <h1 id="headline">
+        Let’s sign in
+      </h1>
+      <div id="api" data-name="Unified" role="main"></div>
+    </div>
+    <div class="footer">
+      <div class="footer__links">
+        <a href="#" target="_blank">About</a>
+        <div class="footer__links__divider">•</div>
+        <a href="#" target="_blank">Privacy</a>
+        <div class="footer__links__divider">•</div>
+        <a href="#" target="_blank">Terms</a>
+      </div>
+      <div class="footer__copyright">
+        © <span id="currentYear"></span> Embark Student Corp.
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://localhost/signin.js"></script>
+
+</body>
+</html>
